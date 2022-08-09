@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+ <script>
+    var banco = {
+        conta: "1034",
+        saldo: 137.90,
+        tipo: "corrente",
+        agencia: "caixa",
+
+        buscarSaldo: function() {
+            banco.saldo;   
+        },
+        deposito: function() {
+            banco.deposito = 103.60;
+            banco.saldo = banco.deposito + banco.saldo;
+        },
+        saque: function() {
+            banco.saque = 95.50;
+            banco.saldo = banco.saldo - banco.saque;
+        },
+        numeroDaConta: function() {
+            banco.conta;
+        }
+    };
+banco.numeroDaConta();
+banco.saque();    
+banco.deposito();
+banco.buscarSaldo();
+console.log(banco);
+
+
+ </script>   
+</body>
+</html>
